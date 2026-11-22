@@ -1,1 +1,167 @@
-/* your code here */
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+/* Main content */
+.content {
+    padding: 30px 50px;
+}
+
+/* Company name and social icons */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.logo_name {
+    color: white;
+    font-size: 32px;
+}
+
+/* Social media icons */
+.media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.media-icons a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.media-icons a:nth-child(1) {
+    background-color: #4267B2;
+}
+
+.media-icons a:nth-child(2) {
+    background-color: #1DA1F2;
+}
+
+.media-icons a:nth-child(3) {
+    background-color: #E1306C;
+}
+
+.media-icons a:nth-child(4) {
+    background-color: #0077B5;
+}
+
+.media-icons a:nth-child(5) {
+    background-color: red;
+}
+
+/* Link columns */
+.link-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.box {
+    list-style: none;
+}
+
+.link_name {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.box li {
+    margin-bottom: 12px;
+}
+
+.box li a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Copyright section */
+.bottom-details {
+    background-color: #2c303a;
+    padding: 25px 50px;
+}
+
+.bottom_text {
+    display: flex;
+    justify-content: space-between;
+    color: #bdbdbd;
+    font-size: 16px;
+}
+
+.policy_terms a {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .link-boxes {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .content {
+        padding: 25px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .media-icons {
+        gap: 10px;
+    }
+
+    .media-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bottom-details {
+        padding: 20px 25px;
+    }
+
+    .bottom_text {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
